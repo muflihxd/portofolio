@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Muflih</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #1f2937, #111827);
+    }
+    h1, h2, h3 {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    a {
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      transform: scale(1.05);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="text-white font-sans">
+
+  <section class="bg-gray-800 text-center py-20 px-6" data-aos="fade-up">
+    <img src="img/foto_latar_merah_300x300.jpg" alt="Foto Profil" class="mx-auto rounded-full mb-6 shadow-xl">
+    <h1 class="text-5xl font-bold">Halo, Saya Muflih</h1>
+    <p class="mt-4 text-xl text-gray-300">UI/UX Designer & Frontend Developer</p>
+    <p class="mt-2 text-sm text-gray-400">Membuat antarmuka digital yang estetik dan fungsional</p>
+    <a href="#portofolio" class="inline-block mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full">Lihat Karya</a>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center gap-12" id="tentang">
+    <div class="text-center md:text-left" data-aos="fade-right">
+      <h2 class="text-4xl font-extrabold text-blue-400 mb-4">Tentang Saya</h2>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Saya <span class="text-blue-300 font-semibold">Muflih Nawawi</span>, seorang <span class="font-semibold text-blue-300">UI/UX Designer</span> & <span class="font-semibold text-blue-300">Frontend Developer</span>.
+      </p>
+      <p class="text-gray-400 text-sm mt-4">
+        Keahlian saya mencakup desain antarmuka, prototyping, serta pengembangan frontend menggunakan HTML, CSS, dan Tailwind.
+      </p>
+      <a href="#portofolio" class="inline-block mt-6 px-6 py-2 bg-blue-600 hover:bg-blue-700 transition text-white rounded-full shadow-lg">
+        Lihat Karya Saya
+      </a>
+    </div>
+    <div class="flex-shrink-0" data-aos="fade-left">
+      <img src="img/foto_latar_merah_300x300.jpg" alt="Foto Muflih" class="w-60 h-60 rounded-full border-4 border-blue-500 shadow-2xl hover:scale-105 transition-transform duration-300">
+    </div>
+  </section>
+
+  <section class="p-8" id="portofolio" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold text-center text-blue-400 mb-8">Proyek Unggulan</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass rounded-lg p-4" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img/project-placeholder.jpg" alt="Project 1" class="mb-3 rounded">
+        <h3 class="font-bold text-xl">Aplikasi Pijar Music</h3>
+        <p class="text-sm text-gray-300">Platform musik digital untuk kolaborasi komunitas musik menggunakan Figma.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center p-6 text-sm text-gray-500">
+    © 2025 Muflih Nawawi.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000, easing: 'ease-in-out' });
+  </script>
+</body>
+</html>
